@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
     <title>Hoellow coursera</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
-    <p>hellow coursera</p>
+    <div ng-controller="MyFirstController">
+<input type="text" ng-model="name" ng-keyup="calculateNumaric()">
+      this is the calculated value {{value}}
+    </div>
   </body>
 </html>
